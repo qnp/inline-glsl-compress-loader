@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "François Risoud <francois.risoud@gmail.com> (http://www.francoisrisoud.com)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/qnp/inline-glsl-compress-loader.git"
+  },
   "license": "MIT"
 }

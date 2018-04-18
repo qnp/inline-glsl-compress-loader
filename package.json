@@ -1,0 +1,11 @@
+{
+  "name": "inline-glsl-compress-loader",
+  "version": "1.0.0",
+  "description": "reduce size of inline GLSL fragments starting with a `//glsl` comment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "François Risoud <francois.risoud@gmail.com> (http://www.francoisrisoud.com)",
+  "license": "MIT"
+}

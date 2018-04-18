@@ -1,6 +1,6 @@
 # inline-glsl-compress-loader
 
-A very simple webpack loader that reduces size of inline `glsl` fragments by appropriately removing spaces, new-lines and comments. These fragments must start with a comment `//glsl` so that it can be easily detected<sup>[1](#1)</sup>.
+A very simple webpack loader that reduces size of inline `glsl` fragments by appropriately removing spaces, new-lines and comments. These fragments must start with a comment `//glsl` so that it can be easily detected<sup>[1](#1)</sup>. Significant file size gain for important WebGL applications.
 
 ## Getting Started
 
@@ -47,6 +47,26 @@ for the script files that needs it. For instance, it can be `.js` files, `.vue` 
     }
     // ...
   }
+```
+
+### Example
+
+This `js` sample code:
+
+```javascript
+  var vertexShader = compileShader(`//glsl
+    attribute vec2 position;
+    void main() {
+        // this is a comment
+        gl_Position = vec4(position, 0.0, 1.0);
+    }
+  `, gl.VERTEX_SHADER);
+```
+
+will be compressed into:
+
+```javascript
+  var vertexShader = compileShader(`attribute vec2 position;void main() {gl_Position = vec4(position, 0.0, 1.0);}`, gl.VERTEX_SHADER);
 ```
 
 ## Contributing

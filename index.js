@@ -1,7 +1,7 @@
 /*
- * reduce size of inline GLSL fragments starting with a `//glsl` comment
+ * webpack loader to reduce size of inline GLSL fragments starting with a `//glsl` comment
  * author: François Risoud
- *
+ * licence: MIT
  */
 
 module.exports = function(source) {

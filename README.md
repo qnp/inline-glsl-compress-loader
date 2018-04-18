@@ -60,4 +60,4 @@ Licensed under the MIT license.
 
 #### Notes
 
-<a name="1">1</a>: I use also this comment for my syntax highlighter to detect `glsl` fragments.
+<a name="1">1</a> - I use also this comment for my syntax highlighter to detect `glsl` fragments.

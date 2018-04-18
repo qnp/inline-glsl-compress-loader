@@ -2,6 +2,7 @@
   "name": "inline-glsl-compress-loader",
   "version": "1.0.0",
   "description": "reduce size of inline GLSL fragments starting with a `//glsl` comment",
+  "keywords": "webpack, loader, glsl, shader, fragment, compress, inline",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
